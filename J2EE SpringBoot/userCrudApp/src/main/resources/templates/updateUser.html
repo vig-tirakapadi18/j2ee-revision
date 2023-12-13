@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Add User</title>
+        <link
+            rel="stylesheet"
+            th:href="@{/css/style.css}" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>UPDATE OPERATION</h1>
+            <form
+                action="/crud/update"
+                method="post">
+                <input
+                    type="hidden"
+                    name="_method"
+                    value="put" />
+                <div class="input-container">
+                    <label for="kodId">KOD ID</label>
+                    <input
+                        type="text"
+                        name="kodId"
+                        id="kodId" />
+                </div>
+                <div class="input-container">
+                    <label for="name">NAME</label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="name" />
+                </div>
+                <div class="input-container">
+                    <label for="age">AGE</label>
+                    <input
+                        type="number"
+                        name="age"
+                        id="age" />
+                </div>
+
+                <button class="update-user">Update User</button>
+            </form>
+        </div>
+    </body>
+</html>

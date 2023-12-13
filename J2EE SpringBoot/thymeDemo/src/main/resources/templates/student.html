@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Student Page</title>
+    </head>
+    <body>
+        <h1>Student Page!</h1>
+        <hr />
+        <h1>Displaying only value:</h1>
+        <h2>Name: <span th:text="${name}" /></h2>
+        <hr />
+        <h1>Displaying Object values:</h1>
+        <h2>User ID: <span th:text="${user1.id}" /></h2>
+        <h2>User NAME: <span th:text="${user1.name}" /></h2>
+        <h2>User AGE: <span th:text="${user1.age}" /></h2>
+        <hr />
+        <h1>Displaying Data in Table Values</h1>
+        <table border>
+            <thead>
+                <tr>
+                    <th>User ID</th>
+                    <th>User NAME</th>
+                    <th>User AGE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td th:text="${user1.id}" />
+                    <td th:text="${user1.name}" />
+                    <td th:text="${user1.age}" />
+                </tr>
+            </tbody>
+        </table>
+
+        <hr />
+
+        <table border>
+            <thead>
+                <tr>
+                    <th>User ID</th>
+                    <th>User NAME</th>
+                    <th>User AGE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="user:${userList}">
+                    <td th:text="${user.id}" />
+                    <td th:text="${user.name}" />
+                    <td th:text="${user.age}" />
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

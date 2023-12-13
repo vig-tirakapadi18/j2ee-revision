@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: Corbel, Verdana, Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("./login.webp");
+    background-position: center;
+    height: 100vh;
+    background-size: 80rem;
+    background-repeat: no-repeat;
+    background-color: #263238;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(0.3rem);
+    width: 35rem;
+    padding: 2rem;
+    color: white;
+    padding-top: 0;
+    text-align: center;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.35),
+        -3px -3px 6px rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+    text-transform: uppercase;
+    border-bottom: 2px solid #263238;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    margin-block: 0.5rem;
+    height: 2.5rem;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 3px;
+    font-family: inherit;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-register {
+    background-color: dodgerblue;
+}
+
+.btn-login {
+    background-color: #10b981;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+    opacity: 0.95;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.testimonials {
+    display: flex;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.testimonial {
+    background-color: rgba(240, 248, 255, 0.3);
+    backdrop-filter: blur(0.25rem);
+    border: 2px solid white;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    width: 20rem;
+}
+
+.testimonial-head {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.testimonial-img {
+    width: 40px;
+    border-radius: 100rem;
+    border: 2px solid white;
+    background-size: cover;
+}
+
+.testimonial-msg {
+    font-weight: 600;
+    text-align: center;
+}

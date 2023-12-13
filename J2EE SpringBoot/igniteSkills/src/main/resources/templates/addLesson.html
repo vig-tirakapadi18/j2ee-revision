@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Add Lesson</title>
+        <link
+            rel="stylesheet"
+            th:href="@{/css/register.css}" />
+    </head>
+    <body>
+        <form
+            action="/addLesson"
+            method="post">
+            <div class="container">
+                <div class="inner-container form-container">
+                    <div class="form-element">
+                        <label for="courseId">COURSE ID</label>
+                        <input
+                            type="number"
+                            name="courseId"
+                            id="courseId"
+                            class="input" />
+                    </div>
+
+                    <div class="form-element">
+                        <label for="lessonId">LESSON ID</label>
+                        <input
+                            type="number"
+                            name="lessonId"
+                            id="lessonId"
+                            class="input" />
+                    </div>
+
+                    <div class="form-element">
+                        <label for="lessonName">LESSON NAME</label>
+                        <input
+                            type="text"
+                            name="lessonName"
+                            id="lessonName"
+                            class="input" />
+                    </div>
+
+                    <div class="form-element">
+                        <label for="lessonTopics">LESSON TOPICS</label>
+                        <input
+                            type="text"
+                            name="lessonTopics"
+                            id="lessonTopics"
+                            class="input" />
+                    </div>
+
+                    <div class="form-element">
+                        <label for="lessonLink">LESSON LINK</label>
+                        <input
+                            type="text"
+                            name="lessonLink"
+                            id="lessonLink"
+                            class="input" />
+                    </div>
+
+                    <button type="submit">Add Lesson</button>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

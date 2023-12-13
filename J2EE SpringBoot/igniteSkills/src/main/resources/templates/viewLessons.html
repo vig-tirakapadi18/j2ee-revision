@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>All Courses</title>
+        <link
+            rel="stylesheet"
+            th:href="@{/css/viewCourses.css}" />
+    </head>
+    <body>
+        <div class="container">
+            <table border>
+                <thead>
+                    <tr class="th">
+                        <th>LESSON ID</th>
+                        <th>LESSON NAME</th>
+                        <th>LESSON TOPICS</th>
+                        <th>LESSON LINK</th>
+                        <th>COURSE ID</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="course:${courseList}">
+                        <td th:text="${course.courseId}" />
+                        <td th:text="${course.courseName}" />
+                        <td th:text="${course.coursePrice}" />
+                        <td>
+                            <button>Buy Now</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

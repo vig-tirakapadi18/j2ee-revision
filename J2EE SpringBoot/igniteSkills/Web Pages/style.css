@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: Corbel, Verdana, Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #263238;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("./teacher.webp");
+    background-position: center;
+    background-size: 60rem;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}

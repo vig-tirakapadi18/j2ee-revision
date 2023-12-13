@@ -1,0 +1,10 @@
+a {
+    color: dodgerblue;
+}
+
+h1 {
+    text-transform: uppercase;
+    border-bottom: 2px solid #263238;
+    padding-bottom: 1rem;
+    text-align: center;
+}

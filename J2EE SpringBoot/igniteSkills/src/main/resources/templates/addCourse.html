@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Add Course</title>
+        <link
+            rel="stylesheet"
+            th:href="@{/css/register.css}" />
+    </head>
+    <body>
+        <form
+            action="/addCourse"
+            method="post">
+            <div class="container">
+                <div class="inner-container form-container">
+                    <div class="form-element">
+                        <label for="courseId">COURSE ID</label>
+                        <input
+                            type="number"
+                            name="courseId"
+                            id="courseId"
+                            class="input" />
+                    </div>
+
+                    <div class="form-element">
+                        <label for="courseName">COURSE NAME</label>
+                        <input
+                            type="text"
+                            name="courseName"
+                            id="courseName"
+                            class="input" />
+                    </div>
+
+                    <div class="form-element">
+                        <label for="coursePrice">COURSE PRICE</label>
+                        <input
+                            type="number"
+                            name="coursePrice"
+                            id="coursePrice"
+                            class="input" />
+                    </div>
+
+                    <button type="submit">Add Course</button>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

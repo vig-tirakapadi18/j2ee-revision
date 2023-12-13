@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Login to IgniteSkills</title>
+        <link
+            rel="stylesheet"
+            th:href="@{/css/login.css}" />
+    </head>
+    <body>
+        <form
+            action="/login"
+            method="post">
+            <div class="container">
+                <div class="inner-container form-container">
+                    <div class="form-elements">
+                        <label for="email">EMAIL</label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email" />
+                    </div>
+                    <div class="form-elements">
+                        <label for="password">PASSWORD</label>
+                        <input
+                            type="password"
+                            name="password"
+                            id="password" />
+                    </div>
+
+                    <button>Login</button>
+                    <span
+                        >Don&apos;t have an account?
+                        <a href="/register">Register</a></span
+                    >
+                </div>
+                <div class="inner-container img-container">
+                    <img
+                        th:src="@{/images/login2.webp}"
+                        alt="studying"
+                        width="700" />
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

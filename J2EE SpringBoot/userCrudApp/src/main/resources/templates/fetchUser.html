@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Fetch User</title>
+        <link
+            rel="stylesheet"
+            th:href="@{/css/style.css}" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>READ OPERATION</h1>
+            <form action="/crud/read">
+                <div class="input-container">
+                    <label for="kodId">KOD ID</label>
+                    <input
+                        type="text"
+                        name="kodId"
+                        id="kodId" />
+                </div>
+                <button class="fetch-user">Add User</button>
+            </form>
+        </div>
+    </body>
+</html>

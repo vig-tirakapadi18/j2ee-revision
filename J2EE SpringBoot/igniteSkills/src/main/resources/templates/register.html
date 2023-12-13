@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Register to IgniteSkills</title>
+        <link
+            rel="stylesheet"
+            th:href="@{/css/register.css}" />
+    </head>
+    <body>
+        <form
+            action="/register"
+            method="post">
+            <div class="container">
+                <div class="inner-container img-container">
+                    <img
+                        th:src="@{/images/register.webp}"
+                        alt="studying"
+                        width="600" />
+                </div>
+                <div class="inner-container form-container">
+                    <div class="form-element">
+                        <label for="username">USERNAME</label>
+                        <input
+                            type="text"
+                            name="username"
+                            id="username"
+                            class="input" />
+                    </div>
+
+                    <div class="form-element">
+                        <label for="email">EMAIL</label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            class="input" />
+                    </div>
+
+                    <div class="form-element">
+                        <label for="password">PASSWORD</label>
+                        <input
+                            type="password"
+                            name="password"
+                            id="password"
+                            class="input" />
+                    </div>
+
+                    <div class="role-container">
+                        <label>Role</label>
+                        <div class="role-element">
+                            <input
+                                type="radio"
+                                name="role"
+                                id="trainer"
+                                class="radio"
+                                value="trainer" />
+                            <label for="trainer">Trainer</label>
+                        </div>
+                        <div class="role-element">
+                            <input
+                                type="radio"
+                                name="role"
+                                id="student"
+                                class="radio"
+                                value="student" />
+                            <label for="student">Student</label>
+                        </div>
+                    </div>
+
+                    <button>Register</button>
+                    <span
+                        >Already have an account?<a href="/login"
+                            >Login</a
+                        ></span
+                    >
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
